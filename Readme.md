@@ -2108,6 +2108,10 @@ git clone https://github.com/Umit8098/Project_Django_Rest_Framework_Rent_A_Car_A
 - terminalde ls komutuyla dosyaları görüyoruz,
 - projemizin içine, manage.py dosyasıyla aynı seviyeye geliyoruz (cd komutuyla), yani ls komutunu çalıştırdığımızda manage.py ı görmemiz lazım.
 
+```bash
+- cd cd Project_Django_Templates_Pizza_App_CH-12_V.03/
+```
+
 - Türkiyede cloud platformlar çok kullanılmıyor, genelde Dedicated Server lar üzerinden işlemler yapılıyor. Tüm proje o server içerisinde oluyor. Servera girip, projeyi clonlama işlemi yapılıyor, veya pipeline kuruluyor (localde bir değişiklik yapıldı, github a pushlandı, merge oldu, development server ından bu değişikliğin algılanıp canlıda değişiklik yapılması...). Bunun için github hook ları var, bu hooklar ile işlem yapılıyor.  Bir değişiklik olduğunda github hookları takip ediliyor, değişiklik olduğunda trigger ediyor, o trigger ile server ınızda otomatik git pull yapıyor, değişiklikleri çekiyor, projeyi yeni şekliyle ayağa kaldırıyor.
 
 - Localde iken yapmamız gereken işlemlerin aynısını yapıyoruz;
