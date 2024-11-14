@@ -2144,7 +2144,7 @@ No matching distribution found for Django==5.1.1 (from -r requirements.txt (line
 - django-crispy-forms==2.3
 ```
 
-  - pythonanywhere -> dashboard -> Web -> Add a new web app -> next -> Manual configuration (including virtualenvs) -> Python 3.10 (python versionu) -> next
+  - pythonanywhere -> dashboard -> Web -> Add a new web app -> next -> Manual configuration (including virtualenvs) -> Python 3.8 (python versionu) -> next
         All done! Your web app is now set up. Details below. 
         (Hepsi tamam! Web uygulamanız artık kuruldu. Detaylar aşağıda.)
   - Artık app kuruldu ve app ile ilgili bir dashboard sundu bize. Burada manuel configurations lar yapacağız. 
@@ -2160,9 +2160,9 @@ No matching distribution found for Django==5.1.1 (from -r requirements.txt (line
 
 
 - Source code: -> bash terminalde app in olduğu klasör içerisinde iken, "pwd" yazıp klasörün yolunu görebiliyoruz.
-        /home/umit8107/Proj_WeatherApp-API-_Temp_Auth-2_email_CH-11_V.02
+        /home/umit8111/Project_Django_Templates_Pizza_App_CH-12_V.03
 - Working directory: -> Source code kısmına yazdığımız yolu buraya da yazıyoruz.
-        /home/umit8107/Proj_WeatherApp-API-_Temp_Auth-2_email_CH-11_V.02
+        /home/umit8111/Project_Django_Templates_Pizza_App_CH-12_V.03
 - WSGI configuration file: Manuel configuration yaptığımız için bu WSGY (Web Server Gateway Interface) configuration u da kendimiz yapacağız. django application ile server arasındaki iletişimi sağlayan gateway. Bunda ayarlar yapmalıyız. sağ tıklayıp new tab ile yeni pencerede açıyoruz, Default olarak farmeworklerin ayar template leri var. 74-89 satırları arasında django kısmı var. Bunun haricindeki herşeyi siliyoruz, sadece django ile ilgili kısım kalıyor. İlk iki satır hariç yorumdan kurtarıyoruz.
 
 ```py
@@ -2188,13 +2188,13 @@ application = get_wsgi_application()
 - path kısmında bize manage.py ın yolunu vermemizi istiyor. Aslında source code umuzun olduğu path, biraz önce "pwd" ile almıştık, "/home/umit8103/Project_Django_Rest_Framework_Stock_App_CH-13". Bunu path değişkenine tanımlıyoruz. Yani manage.py ımız bu klasörün içinde bunu söylüyoruz.
 
 ```py
-path = '/home/umit8107/Proj_WeatherApp-API-_Temp_Auth-2_email_CH-11_V.02'
+path = '/home/umit8111/Project_Django_Templates_Pizza_App_CH-12_V.03'
 ```
 
-- os.environ['DJANGO_SETTINGS_MODULE'] = 'mysite.settings'  -> settings klasörümüzün bulunduğu yeri belirtiyoruz. Bizim settings klasörümüz core in altında. buraya 'core.settings' yazıyoruz.
+- os.environ['DJANGO_SETTINGS_MODULE'] = 'mysite.settings'  -> settings klasörümüzün bulunduğu yeri belirtiyoruz. Bizim settings klasörümüz main in altında. buraya 'main.settings' yazıyoruz.
 
 ```py
-os.environ['DJANGO_SETTINGS_MODULE'] = 'weather.settings'
+os.environ['DJANGO_SETTINGS_MODULE'] = 'main.settings'
 ```
 
 
@@ -2203,6 +2203,12 @@ os.environ['DJANGO_SETTINGS_MODULE'] = 'weather.settings'
 - Virtualenv: env yolunu vermemiz lazım. Tekrar console a geri dönüyoruz, 
   - env nin olduğu dizne gidiyoruz. (ls yaptığımızda env yi görüyoruz.) 
   - "cd env/" ile env nin dizinine giriyoruz. 
+
+```bash
+- cs env/
+- pwd
+```
+
   - pwd yazıp env nin path'ini yani yolunu kopyalıyoruz.
   - kopyaladığımız path i Virtualenv kısmındaki bölüme yazıp tik e tıklıyoruz. env miz de hazır.
 
@@ -2304,4 +2310,33 @@ python manage.py collectstatic
 
 - Bu işlemi yaptıktan sonra değişikliklerin algılanması için tekrardan Reload butonuna tıklıyoruz. Artık sayfalarımızın statics leri de geliyor.
 
+#### Eğer statiklerde sorun çıkarsa;
+- Eğer root directoryde bir static klasörü varsa ve pythonanywhere'de collectstatic komutu çalışmıyorsa;
+    
+Merhaba! Bu hatanın sebebi, STATICFILES_DIRS ayarınıza STATIC_ROOT ile aynı dizini eklemiş olmanız. STATIC_ROOT, collectstatic komutu çalıştırıldığında tüm statik dosyaların toplanacağı dizin olmalı ve STATICFILES_DIRS ile aynı olmamalıdır.
+
+Şu adımları takip ederek hatayı düzeltebilirsiniz:
+
+settings.py dosyanızı açın ve aşağıdaki ayarlara göz atın:
+```py
+STATIC_URL = '/static/'
+STATICFILES_DIRS = [BASE_DIR / 'static']  # Proje içindeki mevcut statik dosyalar için
+STATIC_ROOT = BASE_DIR / 'staticfiles'    # collectstatic dosyalarının toplanacağı yeni dizin
+```
+
+- Burada STATICFILES_DIRS, projenizdeki static dizinine işaret ediyor. STATIC_ROOT ise collectstatic çıktılarının toplanacağı dizindir. STATIC_ROOT'u staticfiles gibi ayrı bir klasör olarak tanımlayın.
+
+- STATIC_ROOT'u doğru bir dizine ayarladıktan sonra python manage.py collectstatic komutunu yeniden çalıştırın. Bu komut, tüm statik dosyalarınızı staticfiles dizinine kopyalayacak.
+
+- Komut tamamlandıktan sonra, PythonAnywhere'deki web uygulamanızın ayarlarında bu staticfiles klasörünü statik dosya dizini olarak belirleyin ve uygulamanızı yeniden başlatın. Bu şekilde statik dosyalarınız düzgün bir şekilde yüklenecektir.
+- pythonanywhere'de statikler için;
+```py
+/staticfiles/
+/home/umit8111/Project_Django_Templates_Pizza_App_CH-12_V.03/staticfiles
+```
+*************************************************************************
+
+
  - Şuanda backend projesi deploye edildi. Eğer bu backend için bir frontend yazılmış ise deploye edilmiş projenin endpointlerine istek atması gerekir. Mesela frontend kısmı React ile yazılmışsa istek atılacak endpointler düzenlenip netlify'a deploye edilip, oradan çalıştırılması daha uygun olur. 
+
+
