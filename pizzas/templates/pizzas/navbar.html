@@ -1,0 +1,38 @@
+{% load static %}
+    <!-- navabar start -->
+    <nav class="navbar navbar-expand-lg navbar navbar-white">
+        <div class="container-fluid "> 
+           <a class="navbar-brand alert-warning text-success fs-4 fw-bolder fst-italic" href="/">
+            <img src="{% static 'images/umit_pizza.png' %}" alt="Hi!" width="50" height="50" class="rounded-5">
+            Ümit Pizza</a>
+
+            {% if request.user.is_superuser %}
+            <a class="nav-link text-danger adm" href="/admin" target="blank">Admin Panel</a>
+            {% endif %}
+
+            <div class="collapse navbar-collapse" id="navbars-host">
+                <ul class="navbar-nav ms-auto">        
+                    <li class="nav-item"><a class="nav-link" href="{% url 'pizzas' %}">Pizzas</a></li>
+
+                    {% if user.is_authenticated %}
+                    <li class="nav-item"><a class="nav-link" href="{% url 'my_orders' %}">My Orders</a></li>
+                    <li class="nav-item"><a class="nav-link" href="{% url 'logout' %}">Logout</a></li>
+                    <li class="nav-item dropdown forget">                        
+                            <a href="#" class="nav-link text-danger dropbtn">Welcome {{user}} ▼</a>
+                            <div class="dropdown-content">
+                                <a href="{% url 'password_change' %}">Pasword Change</a>
+                            </div>
+                    </li>
+
+
+                    {% else %}
+                    <li class="nav-item"><a class="nav-link" href="{% url 'register' %}">Register</a></li>
+                    <li class="nav-item"><a class="nav-link" href="{% url 'login' %}">Login</a></li>
+                    <li class="nav-item forget"><a class="nav-link " href="{% url 'reset' %}">I don't remember pasword</a></li>
+
+                    <!-- <a href="{% url 'reset' %}"><input type="submit" value="I dont rem Pasword Reset"></a> -->
+                    {% endif %}
+                </ul>
+            </div>
+        </div>
+    </nav>

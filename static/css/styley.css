@@ -1,0 +1,96 @@
+.navbar {
+    /* background-color: rgb(209,230,222); */
+    background-color: rgb(203, 252, 233);
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+.homeImage {
+    background-image: url('../images/nadiasgarden.jpg');
+    height: calc(100vh - 76px);
+    background-size: cover;
+    background-position: center;
+}
+
+#warning {
+    /* margin-top: 5px; */
+    background-color: rgb(218, 93, 93);
+    color: rgb(255, 255, 255);
+    margin: auto;
+    height: 40px;
+    text-align: center;
+}
+
+#success {
+    margin-top: 5px;
+    background-color: rgb(2, 156, 2) ;
+    color:rgb(255, 255, 255);
+    margin: auto;
+    height: 40px;
+    text-align: center;
+}
+
+.adm {
+    /* Normal durum için stil */
+    color: #dc3545; /* Kırmızı renk */
+    text-decoration: none;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.adm:hover {
+    /* Hover durumunda arka plan ve metin rengini değiştir */
+    background-color: rgb(245, 123, 123);
+}
+
+li a, .dropbtn {
+    display: inline-block;
+    /* color: white; */
+    text-align: center;
+    /* padding: 14px 16px; */
+    text-decoration: none;
+    border-radius: 5px;
+}
+  
+li a:hover, .dropdown:hover .dropbtn {
+    background-color: rgb(245, 123, 123);
+}
+
+  
+li.dropdown {
+    display: inline-block;
+}
+  
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #c2c2c2;
+    border-radius: 5px;
+    min-width: 140px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+  
+.dropdown-content a {
+    color: black;
+    padding: 10px 10px;
+    text-decoration: none;
+    display: block;
+    text-align: center;
+}
+  
+.dropdown-content a:hover {background-color: #f1f1f1;}
+  
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.forget {
+    border: 2px solid rgb(218, 218, 248);
+    border-radius: 5px;
+}

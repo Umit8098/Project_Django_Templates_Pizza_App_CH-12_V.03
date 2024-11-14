@@ -1,0 +1,59 @@
+{% extends 'pizzas/base.html' %}
+
+{% block content %}
+
+{% if messages %} 
+{% for message in messages %} 
+    {% if message.tags == "warning" %}
+        <div id="warning" class="message rounded col-md-3">{{ message }}</div>
+    {% else %}
+        <div id="success" class="message rounded col-md-3">{{ message }}</div>
+    {% endif %} 
+{% endfor %} 
+{% endif %}
+
+<div class="d-flex flex-column justify-content-center mx-auto mt-5 col-md-6">
+    <div class="alert alert-warning text-center m-2 p-1">
+        <h1>{{ user.username | capfirst }}'s Orders</h1>
+    </div>
+
+    {% for order in orders %}
+    <div class="card m-2 shadow p-2">
+        <div class="row g-0 align-items-center">
+            <!-- Görsel -->
+            <div class="col-md-2 d-flex justify-content-center">
+                <img src="{{ order.pizza.image.url }}" style="border-radius:50%; max-width: 7em; height: auto;" alt="">
+            </div>
+
+            <!-- Sipariş Detayları -->
+            <div class="col-md-6">
+                <div class="card-body">
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">
+                            <strong>Pizza:</strong> {{ order.pizza }} 🍕
+                        </li>
+                        <li class="list-group-item">
+                            <strong>Size:</strong> {{ order.size }} 🍕
+                        </li>
+                        <li class="list-group-item">
+                            <strong>Quantity:</strong> {{ order.quantity }}
+                        </li>
+                        <li class="list-group-item">
+                            <strong>Total Price:</strong> {{ order.total_price }} $
+                        </li>
+                        
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Butonlar -->
+            <div class="col-md-3 d-flex align-items-center justify-content-end">
+                <a href="{% url 'update_order' order.id %}"><button class="btn btn-warning me-2">Update</button></a>
+                <a href="{% url 'delete_order' order.id %}"><button class="btn btn-danger">Delete</button></a>
+            </div>
+        </div>
+    </div>
+    {% endfor %}
+</div>
+
+{% endblock content %}
