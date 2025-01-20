@@ -100,8 +100,8 @@ SECRET_KEY =123456789abcdefg...
 - Pizza Ordering Application
 
 ## Acknowledgements
-- [Bootstrap5](https://getbootstrap.com/) - Projede kullanılan CSS framework'ü.
-- [crispy-forms](https://django-crispy-forms.readthedocs.io/en/latest/) - Projede kullanılan formların CSS framework'ü.
+- [Bootstrap5](https://getbootstrap.com/) - CSS Framework
+- [crispy-forms](https://django-crispy-forms.readthedocs.io/en/latest/) - CSS framework used for forms.
 
 ## Contact
 
