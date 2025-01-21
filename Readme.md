@@ -31,12 +31,16 @@
 <!-- OVERVIEW -->
 
 ## Overview
-- Todo App Authenticate
-![screenshot](project_screenshot/Todo_App_Temp-1.gif)
+- Pizza App Authenticate
+![screenshot](project_screenshot/pizza_app_register.gif)
 
 ---
-- Todo App
-![screenshot](project_screenshot/Todo_App_Temp-2.gif)
+- Todo App Order / Password Change
+![screenshot](project_screenshot/pizza_app_order.gif)
+
+---
+- Todo App Login
+![screenshot](project_screenshot/pizza_app_login.gif)
 
 ---
 
