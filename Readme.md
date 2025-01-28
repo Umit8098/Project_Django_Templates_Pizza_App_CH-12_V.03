@@ -19,6 +19,7 @@
 - [Overview](#overview)
   - [Kullanıcı Kayıt Olma](#kullanıcı-kayıt-olma)
   - [Kullanıcı Login](#kullanıcı-login)
+  - [Pizza App Order](#pizza-app-order)
   - [Kullanıcı Password Change](#kullanıcı-password-change)
 - [Built With](#built-with)
 - [How To Use](#how-to-use)
@@ -45,20 +46,17 @@
 
 ---
 
+### Pizza App Order
+<!-- ![screenshot](project_screenshot/pizza_app_order.gif) -->
+<img src="project_screenshot/pizza_app_order.gif" alt="Pizza App Order" width="400"/>
+➡ Pizza sipariş ekranı.
+
+---
+
 ### Kullanıcı Password Change
 <!-- ![screenshot](project_screenshot/password_change.png) -->
 <img src="project_screenshot/password_change.png" alt="Kullanıcı Password Change" width="400"/>
 ➡ Şifre değiştirme işlemi için kullanılan doğrulama ekranı.
-
----
-
-- Todo App Order / Password Change
-![screenshot](project_screenshot/pizza_app_order.gif)
-
----
-
-- Todo App Login
-![screenshot](project_screenshot/pizza_app_login.gif)
 
 ---
 
