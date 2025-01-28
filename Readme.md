@@ -30,12 +30,10 @@
 ## Overview
 
 ### Kullanıcı Kayıt Olma
-<!-- ![screenshot](project_screenshot/pizza_app_register.png) -->
-<img src="project_screenshot/pizza_app_register.png" alt="Kullanıcı Kayıt Olma" width="400"/>
+<!-- ![screenshot](project_screenshot/pizza_app_register.gif) -->
+<img src="project_screenshot/pizza_app_register.gif" alt="Kullanıcı Kayıt Olma" width="400"/>
 ➡ Kullanıcıların uygulamaya kayıt olma sayfası.
 
-- Pizza App Authenticate
-![screenshot](project_screenshot/pizza_app_register.gif)
 
 ---
 
