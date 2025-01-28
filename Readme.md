@@ -6,13 +6,8 @@
 <div align="center">
   <h3>
     <a href="https://umit8111.pythonanywhere.com/">
-      Demo
-    </a>
-     | 
-    <a href="https://umit8111.pythonanywhere.com/">
-      Project
-    </a>
- 
+      Canlı Demo
+    </a> 
   </h3>
 </div>
 
@@ -22,6 +17,8 @@
 
 - [Table of Contents](#table-of-contents)
 - [Overview](#overview)
+  - [Kullanıcı Kayıt Olma](#kullanıcı-kayıt-olma)
+  - [Kullanıcı Login](#kullanıcı-login)
 - [Built With](#built-with)
 - [How To Use](#how-to-use)
 - [About This Project](#about-this-project)
@@ -31,10 +28,24 @@
 <!-- OVERVIEW -->
 
 ## Overview
+
+### Kullanıcı Kayıt Olma
+<!-- ![screenshot](project_screenshot/pizza_app_register.png) -->
+<img src="project_screenshot/pizza_app_register.png" alt="Kullanıcı Kayıt Olma" width="400"/>
+➡ Kullanıcıların uygulamaya kayıt olma sayfası.
+
 - Pizza App Authenticate
 ![screenshot](project_screenshot/pizza_app_register.gif)
 
 ---
+
+### Kullanıcı Login
+<!-- ![screenshot](project_screenshot/pizza_app_login.png) -->
+<img src="project_screenshot/pizza_app_login.png" alt="Kullanıcı Login" width="400"/>
+➡ Kullanıcıların giriş yaparak blog gönderilerine erişim sağlayabileceği ekran.
+
+---
+
 - Todo App Order / Password Change
 ![screenshot](project_screenshot/pizza_app_order.gif)
 
