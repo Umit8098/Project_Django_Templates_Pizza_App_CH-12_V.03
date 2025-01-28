@@ -21,7 +21,6 @@
   - [Kullanıcı Kayıt Olma](#kullanıcı-kayıt-olma)
   - [Kullanıcı Login](#kullanıcı-login)
   - [Pizza Siparişi Verme](#pizza-siparişi-verme)
-  - [Kullanıcı Password Change](#kullanıcı-password-change)
 - [Built With](#built-with)
 - [How To Use](#how-to-use)
   - [Test Kullanıcı Bilgileri](#test-kullanıcı-bilgileri)
@@ -52,13 +51,6 @@
 <!-- ![screenshot](project_screenshot/pizza_app_order.gif) -->
 <img src="project_screenshot/pizza_app_order.gif" alt="Pizza App Order" width="400"/>
 ➡ Kullanıcıların boyut ve malzemeler seçerek pizza siparişi verdiği ekran.
-
----
-
-### Kullanıcı Password Change
-<!-- ![screenshot](project_screenshot/password_change.png) -->
-<img src="project_screenshot/password_change.png" alt="Kullanıcı Password Change" width="400"/>
-➡ Kullanıcıların hesap şifresini değiştirme ekranı.
 
 ---
 
