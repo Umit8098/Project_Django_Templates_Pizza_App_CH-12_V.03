@@ -38,8 +38,8 @@
 ---
 
 ### Kullanıcı Login
-<!-- ![screenshot](project_screenshot/pizza_app_login.png) -->
-<img src="project_screenshot/pizza_app_login.png" alt="Kullanıcı Login" width="400"/>
+<!-- ![screenshot](project_screenshot/pizza_app_login.gif) -->
+<img src="project_screenshot/pizza_app_login.gif" alt="Kullanıcı Login" width="400"/>
 ➡ Kullanıcıların giriş yaparak blog gönderilerine erişim sağlayabileceği ekran.
 
 ---
