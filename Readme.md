@@ -19,6 +19,7 @@
 - [Overview](#overview)
   - [Kullanıcı Kayıt Olma](#kullanıcı-kayıt-olma)
   - [Kullanıcı Login](#kullanıcı-login)
+  - [Kullanıcı Password Change](#kullanıcı-password-change)
 - [Built With](#built-with)
 - [How To Use](#how-to-use)
 - [About This Project](#about-this-project)
@@ -44,10 +45,18 @@
 
 ---
 
+### Kullanıcı Password Change
+<!-- ![screenshot](project_screenshot/password_change.png) -->
+<img src="project_screenshot/password_change.png" alt="Kullanıcı Password Change" width="400"/>
+➡ Şifre değiştirme işlemi için kullanılan doğrulama ekranı.
+
+---
+
 - Todo App Order / Password Change
 ![screenshot](project_screenshot/pizza_app_order.gif)
 
 ---
+
 - Todo App Login
 ![screenshot](project_screenshot/pizza_app_login.gif)
 
