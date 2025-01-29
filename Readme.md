@@ -2,6 +2,8 @@
 
 <h1 align="center">Project_Django_Template_Pizza_Ordering_App</h1>
 
+<p align="center"><strong>🍕 Pizza ordering application with both backend and frontend developed with Django
+ 🍕<strong></p>
 <p align="center">🍕 Django ile geliştirilmiş hem backend hem de frontend içeren pizza sipariş uygulaması 🍕</p>
 
 <div align="center">
@@ -18,12 +20,12 @@
 
 - [Table of Contents](#table-of-contents)
 - [Overview](#overview)
-  - [Kullanıcı Kayıt Olma](#kullanıcı-kayıt-olma)
-  - [Kullanıcı Login](#kullanıcı-login)
-  - [Pizza Siparişi Verme](#pizza-siparişi-verme)
+  - [User Registration](#user-registration)
+  - [User Login](#user-login)
+  - [Ordering Pizza](#ordering-pizza)
 - [Built With](#built-with)
 - [How To Use](#how-to-use)
-  - [Test Kullanıcı Bilgileri](#test-kullanıcı-bilgileri)
+  - [Test User Information](#test-user-information)
 - [About This Project](#about-this-project)
 - [Key Features](#key-features)
 - [Contact](#contact)
@@ -32,37 +34,36 @@
 
 ## Overview
 
-### Kullanıcı Kayıt Olma
+### User Registration
 <!-- ![screenshot](project_screenshot/pizza_app_register.gif) -->
 <img src="project_screenshot/pizza_app_register.gif" alt="Kullanıcı Kayıt Olma" width="400"/>
-➡ Kullanıcıların uygulamaya kayıt olma sayfası.
-
+➡ User registration page for the application.
 
 ---
 
-### Kullanıcı Login
+### User Login
 <!-- ![screenshot](project_screenshot/pizza_app_login.gif) -->
 <img src="project_screenshot/pizza_app_login.gif" alt="Kullanıcı Login" width="400"/>
-➡ Kullanıcıların giriş yaparak blog gönderilerine erişim sağlayabileceği ekran.
+➡ The screen where users log in and order pizza.
 
 ---
 
-### Pizza Siparişi Verme
+### Ordering Pizza
 <!-- ![screenshot](project_screenshot/pizza_app_order.gif) -->
 <img src="project_screenshot/pizza_app_order.gif" alt="Pizza App Order" width="400"/>
-➡ Kullanıcıların boyut ve malzemeler seçerek pizza siparişi verdiği ekran.
+➡ Screen where users order pizza by selecting size and toppings.
 
 ---
 
 ## Built With
 
 <!-- This section should list any major frameworks that you built your project using. Here are a few examples.-->
-Bu proje aşağıdaki araçlar ve kütüphaneler kullanılarak geliştirilmiştir:
+This project was developed using the following tools and libraries:
 
-- [Django Templates](https://docs.djangoproject.com/en/5.1/topics/templates/): Dinamik web sayfaları oluşturmak için.
-- [Bootstrap5](https://getbootstrap.com/docs/5.0/getting-started/introduction/): Duyarlı ve modern bir kullanıcı arayüzü sağlamak için.
-- [django-crispy-forms](https://django-crispy-forms.readthedocs.io/en/latest/): Formları kolayca stilize etmek için.
-- [dj-rest-auth](https://dj-rest-auth.readthedocs.io/en/latest/): Kullanıcı doğrulama ve yetkilendirme modülü.
+- [Django Templates](https://docs.djangoproject.com/en/5.1/topics/templates/): For creating dynamic web pages.
+- [Bootstrap5](https://getbootstrap.com/docs/5.0/getting-started/introduction/): To provide a responsive and modern user interface.
+- [django-crispy-forms](https://django-crispy-forms.readthedocs.io/en/latest/): To easily style forms.
+- [dj-rest-auth](https://dj-rest-auth.readthedocs.io/en/latest/): User authentication and authorization module.
 
 
 ## How To Use
@@ -107,13 +108,12 @@ SECRET_KEY =123456789abcdefg...
     $ python manage.py runserver
 ```
 
-### Test Kullanıcı Bilgileri
-
-Canlı demo için aşağıdaki test kullanıcı bilgilerini kullanabilirsiniz:
-- **Kullanıcı Adı**: testuser
-- **Şifre**: testpassword123
-- **e-mail**: testuser@gmail.com
-Bu kullanıcı sadece sipariş verme ve profil güncelleme işlemlerini gerçekleştirebilir.
+### Test User Information
+For the live demo, you can use the following test user information:
+- **Username**: testuser
+- **Password**: testpassword123
+- **email**: testuser@gmail.com
+This user can only place orders and update their profile.
 
 
 ## About This Project
@@ -135,10 +135,10 @@ Bu proje, kullanıcıların online pizza siparişi vermesini kolaylaştırmak am
 
 ## Key Features
 
-- **Pizza Siparişi Yönetimi**: Kullanıcılar çeşitli boyut ve malzemelerle pizza siparişi verebilir.
-- **Kullanıcı Yönetimi**: Kayıt, giriş, profil düzenleme ve şifre değiştirme işlemleri.
-- **Sipariş Takibi**: Kullanıcılar verdikleri siparişleri görüntüleyebilir ve yönetebilir.
-- **Kullanıcı Bildirimleri**: Başarılı işlemler sonrası kullanıcıya ekran mesajı ile geri bildirim sağlanır.
+- **Pizza Order Management**: Users can order pizzas with various sizes and toppings.
+- **User Management**: Registration, login, profile editing and password change operations.
+- **Order Tracking**: Users can view and manage their orders.
+- **User Notifications**: After successful transactions, the user is given feedback via an on-screen message.
 
 
 ## Contact
