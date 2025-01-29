@@ -51,6 +51,7 @@
 ### Ordering Pizza
 <!-- ![screenshot](project_screenshot/pizza_app_order.gif) -->
 <img src="project_screenshot/pizza_app_order.gif" alt="Pizza App Order" width="400"/>
+
 ➡ Screen where users order pizza by selecting size and toppings.
 
 ---
