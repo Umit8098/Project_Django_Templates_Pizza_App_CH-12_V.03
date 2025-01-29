@@ -5,7 +5,7 @@
 <p align="center"><strong>🍕 Pizza ordering application with both backend and frontend developed with Django
  🍕<strong></p>
  
---
+----
 
 <p align="center">🍕 Django ile geliştirilmiş hem backend hem de frontend içeren pizza sipariş uygulaması 🍕</p>
 
