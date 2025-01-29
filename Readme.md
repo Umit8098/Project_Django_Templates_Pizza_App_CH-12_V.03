@@ -37,6 +37,7 @@
 ### User Registration
 <!-- ![screenshot](project_screenshot/pizza_app_register.gif) -->
 <img src="project_screenshot/pizza_app_register.gif" alt="Kullanıcı Kayıt Olma" width="400"/>
+
 ➡ User registration page for the application.
 
 ---
@@ -44,6 +45,7 @@
 ### User Login
 <!-- ![screenshot](project_screenshot/pizza_app_login.gif) -->
 <img src="project_screenshot/pizza_app_login.gif" alt="Kullanıcı Login" width="400"/>
+
 ➡ The screen where users log in and order pizza.
 
 ---
