@@ -143,6 +143,13 @@ Bu proje, kullanıcıların online pizza siparişi vermesini kolaylaştırmak am
 - **Order Tracking**: Users can view and manage their orders.
 - **User Notifications**: After successful transactions, the user is given feedback via an on-screen message.
 
+---
+
+- **Pizza Sipariş Yönetimi**: Kullanıcılar çeşitli boyutlarda ve malzemelerde pizza sipariş edebilir.
+- **Kullanıcı Yönetimi**: Kayıt, giriş, profil düzenleme ve şifre değiştirme işlemleri.
+- **Sipariş Takibi**: Kullanıcılar siparişlerini görüntüleyebilir ve yönetebilir.
+- **Kullanıcı Bildirimleri**: Başarılı işlemler sonrasında kullanıcıya ekran mesajı aracılığıyla geri bildirim verilir.
+
 
 ## Contact
 
