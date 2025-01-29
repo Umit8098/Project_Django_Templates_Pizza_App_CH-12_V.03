@@ -4,6 +4,9 @@
 
 <p align="center"><strong>🍕 Pizza ordering application with both backend and frontend developed with Django
  🍕<strong></p>
+ 
+---
+
 <p align="center">🍕 Django ile geliştirilmiş hem backend hem de frontend içeren pizza sipariş uygulaması 🍕</p>
 
 <div align="center">
@@ -126,7 +129,7 @@ This project is used to enable users to place pizza orders online. Users:
 - User can perform account operations (registration, login, change password).
 - It offers both front-end and back-end support with Django Template.
 
-<hr>
+---
 
 Bu proje, kullanıcıların online pizza siparişi vermesini kolaylaştırmak amacıyla geliştirilmiştir. Kullanıcılar:
 - Çeşitli boyut ve malzemelerle pizza siparişi verebilir.
