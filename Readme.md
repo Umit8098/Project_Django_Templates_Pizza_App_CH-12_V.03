@@ -1,27 +1,38 @@
 <!-- Please update value in the {}  -->
 
-<h1 align="center">Project_Django_Template_Pizza_Ordering_App</h1>
+ <p align="center">
+  <img src="https://img.shields.io/badge/Django-5.x-092E20?logo=django&logoColor=white"/>
+  <img src="https://img.shields.io/badge/Python-3.x-3776AB?logo=python&logoColor=white"/>
+  <img src="https://img.shields.io/badge/Full--Stack-Django-success"/>
+  <img src="https://img.shields.io/badge/Authentication-Session--Based-blue"/>
+  <img src="https://img.shields.io/badge/Bootstrap-5-7952B3?logo=bootstrap&logoColor=white"/>
+  <img src="https://img.shields.io/badge/Deployment-PythonAnywhere-purple"/>
+</p>
 
-<p align="center"><strong>🍕 Pizza ordering application with both backend and frontend developed with Django
- 🍕<strong></p>
- 
-----
+<h1 align="center">🍕 Django Pizza Ordering App</h1>
 
-<p align="center">🍕 Django ile geliştirilmiş hem backend hem de frontend içeren pizza sipariş uygulaması 🍕</p>
+<p align="center">
+A full-stack pizza ordering application built with Django Templates, featuring authentication and order management.
+</p>
+
 
 <div align="center">
   <h3>
     <a href="https://umit8111.pythonanywhere.com/">
       Live Demo
-    </a> 
+    </a>
+      | 
+    <a href="https://github.com/Umit8098/Project_Django_Templates_Pizza_App_CH-12_V.03.git">
+      Project
+    </a>
+
   </h3>
 </div>
 
 <!-- TABLE OF CONTENTS -->
 
-## Table of Contents
+## Navigation
 
-- [Table of Contents](#table-of-contents)
 - [Overview](#overview)
   - [User Registration](#user-registration)
   - [User Login](#user-login)
@@ -59,7 +70,7 @@
 
 ➡ Screen where users order pizza by selecting size and toppings.
 
----
+
 
 ## Built With
 
@@ -69,7 +80,8 @@ This project was developed using the following tools and libraries:
 - [Django Templates](https://docs.djangoproject.com/en/5.1/topics/templates/): For creating dynamic web pages.
 - [Bootstrap5](https://getbootstrap.com/docs/5.0/getting-started/introduction/): To provide a responsive and modern user interface.
 - [django-crispy-forms](https://django-crispy-forms.readthedocs.io/en/latest/): To easily style forms.
-- [dj-rest-auth](https://dj-rest-auth.readthedocs.io/en/latest/): User authentication and authorization module.
+- Django Authentication (Session-based)
+
 
 
 ## How To Use
@@ -82,11 +94,6 @@ When installing the required packages in the requirements.txt file, review the p
 
 Complete the installation by uncommenting the appropriate package.
 
----
-
-requirements.txt dosyasındaki gerekli paketlerin kurulumu esnasında windows/macOS/Linux ortamları için paket farklılıklarını inceleyin. 
-
-Uygun olan paketi yorumdan kurtararak kurulumu gerçekleştirin.
 
 ```bash
 # Clone this repository
@@ -123,19 +130,15 @@ This user can only place orders and update their profile.
 
 
 ## About This Project
-This project is used to enable users to place pizza orders online. Users:
-- Pizzas can be ordered in various sizes and options.
-- Can track and manage their orders.
-- User can perform account operations (registration, login, change password).
-- It offers both front-end and back-end support with Django Template.
 
----
+This project allows users to order pizzas online through a simple and user-friendly interface.  
+It is built as a full-stack Django Template application and includes user authentication and order management features.
 
-Bu proje, kullanıcıların online pizza siparişi vermesini kolaylaştırmak amacıyla geliştirilmiştir. Kullanıcılar:
-- Çeşitli boyut ve malzemelerle pizza siparişi verebilir.
-- Siparişlerini takip edebilir ve yönetebilir.
-- Kullanıcı hesap işlemleri yapabilir (kayıt, giriş, şifre değiştirme).
-- Django Template ile hem frontend hem de backend desteği sunmaktadır.
+Users can:
+- Register and log in securely
+- Order pizzas with different sizes and toppings
+- View and manage their orders
+- Update profile information and change passwords
 
 
 
@@ -145,13 +148,6 @@ Bu proje, kullanıcıların online pizza siparişi vermesini kolaylaştırmak am
 - **User Management**: Registration, login, profile editing and password change operations.
 - **Order Tracking**: Users can view and manage their orders.
 - **User Notifications**: After successful transactions, the user is given feedback via an on-screen message.
-
----
-
-- **Pizza Sipariş Yönetimi**: Kullanıcılar çeşitli boyutlarda ve malzemelerde pizza sipariş edebilir.
-- **Kullanıcı Yönetimi**: Kayıt, giriş, profil düzenleme ve şifre değiştirme işlemleri.
-- **Sipariş Takibi**: Kullanıcılar siparişlerini görüntüleyebilir ve yönetebilir.
-- **Kullanıcı Bildirimleri**: Başarılı işlemler sonrasında kullanıcıya ekran mesajı aracılığıyla geri bildirim verilir.
 
 
 ## Contact
