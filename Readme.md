@@ -19,17 +19,17 @@ A full-stack pizza ordering application built with Django Templates, featuring a
 <div align="center">
   <h3>
     <a href="https://umit8111.pythonanywhere.com/">
-      Live Demo
+      🖥️ Live Demo
     </a>
       | 
     <a href="https://github.com/Umit8098/Project_Django_Templates_Pizza_App_CH-12_V.03.git">
-      Project
+      📂 Project
     </a>
 
   </h3>
 </div>
 
-<!-- TABLE OF CONTENTS -->
+![Pizza Order](./project_screenshot/pizza_app_order.gif)
 
 ## Navigation
 
