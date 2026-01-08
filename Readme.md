@@ -23,7 +23,7 @@ A full-stack pizza ordering application built with Django Templates, featuring a
     </a>
       | 
     <a href="https://github.com/Umit8098/Project_Django_Templates_Pizza_App_CH-12_V.03.git">
-      📂 Project
+      📂 Repository
     </a>
 
   </h3>
